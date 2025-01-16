@@ -1,12 +1,12 @@
 export default function Home() {
 	return (
 		<div className="lg:flex lg:justify-evenly lg:flex-wrap">
-			<section className="mb-6 lg:w-96 mx-8">
+			<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
 				<div className="relative">
 					<img
 						src="./friends-drinking-min.jpg"
 						alt="Clientes disfrutando sus cervezas en El Gran Chopp"
-						className="w-full h-40 object-cover brightness-[.65] saturate-[1.35]"
+						className="w-full h-40 object-cover brightness-[.65] saturate-[1.35] lg:rounded-md group-hover:brightness-[.8]"
 					/>
 
 					<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 p-2 bg-destacable/70 rounded-lg">
@@ -23,12 +23,12 @@ export default function Home() {
 				</p>
 			</section>
 
-			<section className="mb-6 lg:w-96 mx-8">
+			<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
 				<div className="relative">
 					<img
 						src="./concert.png"
 						alt="Clientes disfrutando un show en Pellegrini Concert"
-						className="w-full h-40 object-cover brightness-[.65] saturate-[1.15]"
+						className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
 					/>
 
 					<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 p-2 bg-destacable/70 rounded-lg">
@@ -44,12 +44,12 @@ export default function Home() {
 				</p>
 			</section>
 
-			<section className="mb-6 lg:w-96 mx-8">
+			<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
 				<div className="relative">
 					<img
 						src="./cine-kinder-min.png"
 						alt="Sector kinder para los niños que asistan a El Gran Chopp"
-						className="w-full h-40 object-cover brightness-[.65] saturate-[1.15]"
+						className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
 					/>
 
 					<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 p-2 bg-destacable/70 rounded-lg">
