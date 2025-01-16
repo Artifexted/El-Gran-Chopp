@@ -37,12 +37,14 @@ export default function Home() {
 				</div>
 
 				<p className="mx-4 mt-2 lg:text-center">
-					Viví la magia de los shows en vivo en nuestro primer piso. Música,
-					luces y ambiente único para disfrutar cada evento.
+					Viví la magia de los shows en vivo en nuestro primer piso, un lugar
+					pensado para hacer de cada evento una experiencia única. Música en
+					vivo, luces espectaculares y un ambiente inigualable que te hará
+					sentir parte de la energía del momento. ¡No te lo podés perder!
 				</p>
 			</section>
 
-      <section className="mb-6 lg:w-96 mx-8">
+			<section className="mb-6 lg:w-96 mx-8">
 				<div className="relative">
 					<img
 						src="./cine-kinder-min.png"
@@ -56,7 +58,10 @@ export default function Home() {
 				</div>
 
 				<p className="mx-4 mt-2 lg:text-center">
-					¡El lugar ideal para que los chicos se diviertan mientras vos comés tranquilo! Cine, juegos didácticos y los clásicos juegos de arcade, todo en un mismo espacio. ¡Veni a disfrutar con tu familia de cada espacio de esta maravillosa experiencia!
+					¡El lugar ideal para que los chicos se diviertan mientras vos comés
+					tranquilo! Cine, juegos didácticos y los clásicos juegos de arcade,
+					todo en un mismo espacio. ¡Veni a disfrutar con tu familia de cada
+					espacio de esta maravillosa experiencia!
 				</p>
 			</section>
 		</div>
