@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="py-6 flex flex-col items-center">
+        <header className="pt-4 flex flex-col items-center lg:mb-4">
             <img src="./logo.png" alt="Logo Chopp" width={116} height={116} />
 
-            <nav className="flex space-x-2 sm:space-x-6 py-4 font-bold mx-4">
+            <nav className="flex space-x-2 sm:space-x-6 py-4 font-bold mx-2">
                 <Link href="#" className="transition delay-3 rounded-full px-1 cursor-not-allowed" aria-disabled="true" onClick={(e) => e.preventDefault()}>
                     INICIO
                 </Link>

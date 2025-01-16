@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({ weight: '400' , subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: "El Gran Chopp",
@@ -14,7 +17,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="es">
-			<body className="min-h-screen flex flex-col">
+			<body className={`${poppins.className} min-h-screen flex flex-col`}>
 				<Header />
 				<main className="flex-grow">
 					{children}
