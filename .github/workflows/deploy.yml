@@ -24,6 +24,6 @@ jobs:
           sudo apt-get update && sudo apt-get install -y lftp
           lftp -u "$USER,$PASSWORD" "$HOST" <<EOF
           set ssl:verify-certificate no
-          mirror -R --delete --only-newer out/ /public_html/new/
+          mirror -R --delete --only-newer out/ /new/
           quit
           EOF
