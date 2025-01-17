@@ -7,9 +7,12 @@ export default function Header() {
 	const [currentPath, setCurrentPath] = useState<string>("");
 
 	useEffect(() => {
-		const path = window.location.pathname
-			.replace("/new", "")
-			.replace(/\/$/, "");
+		let path = window.location.pathname.replace("/new", "").replace(/\/$/, "");
+
+		if (path === "") {
+			path = "/";
+		}
+
 		setCurrentPath(path);
 	}, []);
 
@@ -17,6 +20,15 @@ export default function Header() {
 		console.log(currentPath + " | " + path);
 		console.log(currentPath === path);
 		return currentPath === path;
+	};
+
+	const handleLinkClick = (
+		e: React.MouseEvent<HTMLAnchorElement>,
+		path: string
+	) => {
+		if (isActive(path)) {
+			e.preventDefault();
+		}
 	};
 
 	return (
@@ -30,6 +42,7 @@ export default function Header() {
 					className={`transition delay-3 rounded-full px-1 hover:scale-110 hover:bg-destacable hover:text-black hover:opacity-100 ${
 						isActive("/") ? "cursor-not-allowed opacity-60" : ""
 					}`}
+					onClick={(e) => handleLinkClick(e, "/")}
 				>
 					INICIO
 				</Link>
@@ -65,6 +78,7 @@ export default function Header() {
 					className={`transition delay-3 rounded-full px-1 hover:scale-110 hover:bg-destacable hover:text-black hover:opacity-100 ${
 						isActive("/sucursales") ? "cursor-not-allowed opacity-60" : ""
 					}`}
+					onClick={(e) => handleLinkClick(e, "/")}
 				>
 					SUCURSALES
 				</Link>
