@@ -17,18 +17,18 @@ export default function Header() {
 			setCurrentPath(path);
 		};
 
-		updateCurrentPath();
+		const handlePopState = () => {
+			updateCurrentPath();
+		  };
 
-		window.addEventListener("popstate", updateCurrentPath);
+		window.addEventListener("popstate", handlePopState);
 
 		return () => {
-			window.removeEventListener("popstate", updateCurrentPath);
+			window.removeEventListener("popstate", handlePopState);
 		};
 	}, []);
 
 	const isActive = (path: string) => {
-		console.log(currentPath + " | " + path);
-		console.log(currentPath === path);
 		return currentPath === path;
 	};
 
