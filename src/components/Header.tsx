@@ -7,13 +7,23 @@ export default function Header() {
 	const [currentPath, setCurrentPath] = useState<string>("");
 
 	useEffect(() => {
-		let path = window.location.pathname.replace("/new", "").replace(/\/$/, "");
+		const updateCurrentPath = () => {
+			let path = window.location.pathname
+				.replace("/new", "")
+				.replace(/\/$/, "");
+			if (path === "") {
+				path = "/";
+			}
+			setCurrentPath(path);
+		};
 
-		if (path === "") {
-			path = "/";
-		}
+		updateCurrentPath();
 
-		setCurrentPath(path);
+		window.addEventListener("popstate", updateCurrentPath);
+
+		return () => {
+			window.removeEventListener("popstate", updateCurrentPath);
+		};
 	}, []);
 
 	const isActive = (path: string) => {
@@ -78,7 +88,7 @@ export default function Header() {
 					className={`transition delay-3 rounded-full px-1 hover:scale-110 hover:bg-destacable hover:text-black hover:opacity-100 ${
 						isActive("/sucursales") ? "cursor-not-allowed opacity-60" : ""
 					}`}
-					onClick={(e) => handleLinkClick(e, "/")}
+					onClick={(e) => handleLinkClick(e, "/sucursales")}
 				>
 					SUCURSALES
 				</Link>
