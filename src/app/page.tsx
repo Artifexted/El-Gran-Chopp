@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import InstaPosts from "@/components/InstaPosts";
 import Link from "next/link";
 
