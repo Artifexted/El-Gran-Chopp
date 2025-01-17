@@ -25,14 +25,16 @@ export default function Header() {
 					</Link>
 					<div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg py-2 w-48 z-10">
 						<Link
-							href="./carta-salon.pdf"
+							href="/new/carta-salon.pdf"
 							className="block px-4 py-2 text-black hover:bg-gray-100"
+							target="_blank"
 						>
 							SALÓN
 						</Link>
 						<Link
-							href="./carta-delivery.pdf"
+							href="/new/carta-delivery.pdf"
 							className="block px-4 py-2 text-black hover:bg-gray-100"
+							target="_blank"
 						>
 							DELIVERY
 						</Link>
