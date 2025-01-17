@@ -1,3 +1,6 @@
+import InstaPosts from "@/components/InstaPosts";
+import Link from "next/link";
+
 export default function Home() {
 	return (
 		<div className="lg:flex lg:justify-evenly lg:flex-wrap">
@@ -64,6 +67,30 @@ export default function Home() {
 					espacio de esta maravillosa experiencia!
 				</p>
 			</section>
+
+			<Link href="https://receptivoselgranchopp.com.ar" target="_blank">
+				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group">
+					<div className="relative">
+						<img
+							src="./turism-min.jpg"
+							alt="Sector kinder para los niños que asistan a El Gran Chopp"
+							className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
+						/>
+
+						<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 px-1 py-2 bg-destacable/70 rounded-lg">
+							<h2 className="text-black font-black">Turismo Receptivo</h2>
+						</div>
+					</div>
+
+					<p className="mx-4 mt-2 lg:text-center">
+						Somos líderes en turismo receptivo en Rosario, especializados en
+						contingentes de todo el país, con un restaurante de gran capacidad,
+						adaptado a dietas específicas y con cocina exclusiva para celíacos.
+					</p>
+				</section>
+			</Link>
+
+			<InstaPosts />
 		</div>
 	);
 }
