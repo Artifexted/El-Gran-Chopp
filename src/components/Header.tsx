@@ -1,45 +1,44 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
-	const [currentPath, setCurrentPath] = useState<string>("");
+	// const [currentPath, setCurrentPath] = useState<string>("");
 
-	useEffect(() => {
-		const updateCurrentPath = () => {
-			let path = window.location.pathname
-				.replace("/new", "")
-				.replace(/\/$/, "");
-			if (path === "") {
-				path = "/";
-			}
-			setCurrentPath(path);
-		};
+	// useEffect(() => {
+	// 	const updateCurrentPath = () => {
+	// 		let path = window.location.pathname
+	// 			.replace("/new", "")
+	// 			.replace(/\/$/, "");
+	// 		if (path === "") {
+	// 			path = "/";
+	// 		}
+	// 		setCurrentPath(path);
+	// 	};
 
-		const handlePopState = () => {
-			updateCurrentPath();
-		  };
+	// 	const handlePopState = () => {
+	// 		updateCurrentPath();
+	// 	  };
 
-		window.addEventListener("popstate", handlePopState);
+	// 	window.addEventListener("popstate", handlePopState);
 
-		return () => {
-			window.removeEventListener("popstate", handlePopState);
-		};
-	}, []);
+	// 	return () => {
+	// 		window.removeEventListener("popstate", handlePopState);
+	// 	};
+	// }, []);
 
-	const isActive = (path: string) => {
-		return currentPath === path;
-	};
+	// const isActive = (path: string) => {
+	// 	return currentPath === path;
+	// };
 
-	const handleLinkClick = (
-		e: React.MouseEvent<HTMLAnchorElement>,
-		path: string
-	) => {
-		if (isActive(path)) {
-			e.preventDefault();
-		}
-	};
+	// const handleLinkClick = (
+	// 	e: React.MouseEvent<HTMLAnchorElement>,
+	// 	path: string
+	// ) => {
+	// 	if (isActive(path)) {
+	// 		e.preventDefault();
+	// 	}
+	// };
 
 	return (
 		<header className="pt-4 flex flex-col items-center lg:mb-4">
@@ -49,10 +48,8 @@ export default function Header() {
 				<Link
 					id="inicio-link"
 					href="/"
-					className={`transition delay-3 rounded-full px-1 hover:scale-110 hover:bg-destacable hover:text-black hover:opacity-100 ${
-						isActive("/") ? "cursor-not-allowed opacity-60" : ""
-					}`}
-					onClick={(e) => handleLinkClick(e, "/")}
+					className={`transition delay-3 rounded-full px-1 hover:scale-110 hover:bg-destacable hover:text-black hover:opacity-100`}
+					// onClick={(e) => handleLinkClick(e, "/")}
 				>
 					INICIO
 				</Link>
@@ -85,10 +82,8 @@ export default function Header() {
 				<Link
 					id="sucursales-link"
 					href="/sucursales"
-					className={`transition delay-3 rounded-full px-1 hover:scale-110 hover:bg-destacable hover:text-black hover:opacity-100 ${
-						isActive("/sucursales") ? "cursor-not-allowed opacity-60" : ""
-					}`}
-					onClick={(e) => handleLinkClick(e, "/sucursales")}
+					className={`transition delay-3 rounded-full px-1 hover:scale-110 hover:bg-destacable hover:text-black hover:opacity-100 `}
+					// onClick={(e) => handleLinkClick(e, "/sucursales")}
 				>
 					SUCURSALES
 				</Link>
