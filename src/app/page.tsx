@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<>
-			<h1 className="text-center font-black text-destacable mb-2">El Gran Chopp</h1>
+			<h1 className="text-center font-black text-destacable mb-4 text-2xl">El Gran Chopp</h1>
 
 			<div className="lg:flex lg:justify-evenly lg:flex-wrap">
 				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
