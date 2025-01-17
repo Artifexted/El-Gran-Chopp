@@ -1,18 +1,29 @@
+import FbIcon from "@/svg/FbIcon";
+import InstaIcon from "@/svg/InstaIcon";
 import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer className="py-2 flex flex-col space-x-4 mx-4 md:flex-row md:justify-between cursor-default">
-			<p className="my-2 text-center">
+		<footer className="py-2 flex flex-col mx-4 md:flex-row md:justify-between cursor-default">
+			<p className="my-2 text-center w-[25%] justify-start">
 				Copyright © <span className="text-destacable">El Gran Chopp</span> {new Date().getFullYear()}. 
                 Todos los derechos reservados.
 			</p>
-			<p className="my-2 text-center">
+			<div className="flex space-x-2 w-[50%] justify-center">
+				<Link href="https://www.instagram.com/elgranchopp" target="_blank" className="hover:scale-110">
+					<InstaIcon width={32} height={32} />
+				</Link>
+				<Link href="https://www.facebook.com/ElGranChopp" target="_blank" className="hover:scale-110">
+					<FbIcon width={32} height={32} />
+				</Link>
+			</div>
+			<p className="my-2 text-center w-[25%] justify-end flex">
 				Sitio web hecho por 
 				<span className="ml-1">
 					<Link
-						href="https://www.linkedin.com/in/artifexted/"
+						href="https://www.agustinluceroweb.com/"
 						className="text-destacable"
+						target="_blank"
 					>
 						Artifexted
 					</Link>
