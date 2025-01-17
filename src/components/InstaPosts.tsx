@@ -36,7 +36,7 @@ export default async function InstaPosts() {
 		);
 
 	return (
-		<div className="bg-[#18191b] py-10 w-full">
+		<div className="bg-[#18191b] my-8 w-full">
 			<h2 className="text-center text-xl font-semibold text-gray-200 mb-6">
 				¡Visita nuestro Instagram!
 			</h2>

@@ -4,6 +4,8 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<div className="lg:flex lg:justify-evenly lg:flex-wrap">
+			<h1>El Gran Chopp</h1>
+
 			<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
 				<div className="relative">
 					<img
