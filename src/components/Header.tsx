@@ -7,7 +7,8 @@ export default function Header() {
   const [currentPath, setCurrentPath] = useState<string>("");
 
   useEffect(() => {
-    setCurrentPath(window.location.pathname);
+    const path = window.location.pathname.replace('/new', '');
+    setCurrentPath(path);
   }, []);
 
   const isActive = (path: string) => {
