@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: 'export',
+  output: 'export',
   trailingSlash: true,
-  // basePath: '/new'
+  basePath: '/new'
 };
 
 export default nextConfig;
