@@ -8,7 +8,7 @@ export default function Home() {
 			<h1 className="text-center font-black text-destacable mb-4 text-2xl">El Gran Chopp</h1>
 
 			<div className="lg:flex lg:justify-evenly lg:flex-wrap">
-				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
+				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35">
 					<div className="relative">
 						<img
 							src="./friends-drinking-min.jpg"
@@ -30,7 +30,7 @@ export default function Home() {
 					</p>
 				</section>
 
-				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
+				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35">
 					<div className="relative">
 						<img
 							src="./concert.png"
@@ -51,7 +51,7 @@ export default function Home() {
 					</p>
 				</section>
 
-				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default">
+				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35">
 					<div className="relative">
 						<img
 							src="./cine-kinder-min.png"
@@ -73,7 +73,7 @@ export default function Home() {
 				</section>
 
 				<Link href="https://receptivoselgranchopp.com.ar" target="_blank">
-					<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group">
+					<section className="mb-8 transition duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35">
 						<div className="relative">
 							<img
 								src="./turism-min.jpg"
