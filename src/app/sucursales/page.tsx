@@ -32,13 +32,13 @@ export default function Sucursales() {
 
 					<div className="flex space-x-2 justify-center my-4">
 						<a href="tel:+5493416880560" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex hover:scale-105 transition duration-200">
 								<FontAwesomeIcon icon={faPhone} className="mr-1 w-4" />
 								3416880560
 							</div>
 						</a>
 						<a href="https://wa.me/5493416880560" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex hover:scale-105 transition duration-200">
 								<FontAwesomeIcon icon={faWhatsapp} className="mr-1 w-4" />
 								3416880560
 							</div>
@@ -48,7 +48,7 @@ export default function Sucursales() {
 					<a
 						href="https://maps.app.goo.gl/Yeo1Gjke4QeJLhMH7"
 						target="_blank"
-						className="text-destacable"
+						className="text-destacable hover:scale-105 transition duration-200"
 					>
 						<div className="flex justify-center">
 							<FontAwesomeIcon icon={faLocationDot} className="mr-1 w-4" />
@@ -78,13 +78,13 @@ export default function Sucursales() {
 
 					<div className="flex space-x-2 justify-center my-4">
 						<a href="tel:+5493415947777" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex hover:scale-105 transition duration-200">
 								<FontAwesomeIcon icon={faPhone} className="mr-1 w-4" />
 								3415947777
 							</div>
 						</a>
 						<a href="https://wa.me/5493415947777" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex hover:scale-105 transition duration-200">
 								<FontAwesomeIcon icon={faWhatsapp} className="mr-1 w-4" />
 								3415947777
 							</div>
@@ -94,7 +94,7 @@ export default function Sucursales() {
 					<a
 						href="https://maps.app.goo.gl/yTWUDykaF2axsMg28"
 						target="_blank"
-						className="text-destacable"
+						className="text-destacable hover:scale-105 transition duration-200"
 					>
 						<div className="flex justify-center">
 							<FontAwesomeIcon icon={faLocationDot} className="mr-1 w-4" />
