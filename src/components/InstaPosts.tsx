@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { InstaPost } from "@/interfaces/InstagramPosts";
 import Link from "next/link";
 
