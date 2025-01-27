@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 /* eslint-disable @next/next/no-img-element */
 export default function Sucursales() {
 	return (
@@ -10,7 +14,7 @@ export default function Sucursales() {
 				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6 text-center">
 					<div className="relative">
 						<img
-							src="./sucursales/suc_pellegrini-min.jpg"
+							src="../sucursales/suc_pellegrini-min.jpg"
 							alt="El Gran Chopp Av. Pellegrini 1590, Rosario"
 							className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
 						/>
@@ -26,14 +30,16 @@ export default function Sucursales() {
 						bebidas y platos para todos los gustos.
 					</p>
 
-					<div className="flex space-x-2 justify-center mt-2">
+					<div className="flex space-x-2 justify-center my-4">
 						<a href="tel:+5493416880560" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+								<FontAwesomeIcon icon={faPhone} className="mr-1 w-4" />
 								3416880560
 							</div>
 						</a>
 						<a href="https://wa.me/5493416880560" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+								<FontAwesomeIcon icon={faWhatsapp} className="mr-1 w-4" />
 								3416880560
 							</div>
 						</a>
@@ -44,14 +50,17 @@ export default function Sucursales() {
 						target="_blank"
 						className="text-destacable"
 					>
-						Av. Pellegrini 1590, Rosario
+						<div className="flex justify-center">
+							<FontAwesomeIcon icon={faLocationDot} className="mr-1 w-4" />
+							Av. Pellegrini 1590, Rosario
+						</div>
 					</a>
 				</section>
 
 				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6 text-center">
 					<div className="relative">
 						<img
-							src="./sucursales/suc_laprida-min.jpg"
+							src="../sucursales/suc_laprida-min.jpg"
 							alt="El Gran Chopp Laprida 601, Rosario"
 							className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
 						/>
@@ -62,17 +71,21 @@ export default function Sucursales() {
 					</div>
 
 					<p className="mx-4 mt-2 lg:text-center">
-						Sucursal ubicada en Laprida 601, el centro de Rosario. En esta sucursal podrás pedir para llevar y disfrutar la delicia de El Gran Chopp a donde sea que vayas.
+						Sucursal ubicada en Laprida 601, el centro de Rosario. En esta
+						sucursal podrás pedir para llevar y disfrutar la delicia de El Gran
+						Chopp a donde sea que vayas.
 					</p>
 
-					<div className="flex space-x-2 justify-center mt-2">
+					<div className="flex space-x-2 justify-center my-4">
 						<a href="tel:+5493415947777" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+								<FontAwesomeIcon icon={faPhone} className="mr-1 w-4" />
 								3415947777
 							</div>
 						</a>
 						<a href="https://wa.me/5493415947777" target="_blank">
-							<div className="bg-destacable p-2 rounded-lg text-black w-fit">
+							<div className="bg-destacable p-2 rounded-lg text-black w-fit flex">
+								<FontAwesomeIcon icon={faWhatsapp} className="mr-1 w-4" />
 								3415947777
 							</div>
 						</a>
@@ -83,7 +96,10 @@ export default function Sucursales() {
 						target="_blank"
 						className="text-destacable"
 					>
-						Laprida 601, Rosario
+						<div className="flex justify-center">
+							<FontAwesomeIcon icon={faLocationDot} className="mr-1 w-4" />
+							Laprida 601, Rosario
+						</div>
 					</a>
 				</section>
 			</div>
