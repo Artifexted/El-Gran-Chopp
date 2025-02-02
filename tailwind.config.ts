@@ -13,6 +13,16 @@ export default {
         foreground: "var(--foreground)",
         destacable: "#fbb914"
       },
+      animation: {
+        wiggle: "wiggle 2s ease-in-out infinite"
+      },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(-10deg) scale(1.15)' },
+          '50%': { transform: 'rotate(10deg) scale(0.8)' },
+          '100%': { transform: 'rotate(-10deg) scale(1.15)' }
+        }
+      }
     },
   },
   plugins: [],

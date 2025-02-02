@@ -38,16 +38,18 @@ export default async function InstaPosts() {
 
 	return (
 		<div className="bg-[#18191b] my-8 w-full">
-			<h2 className="text-center text-xl font-semibold text-gray-200 mb-6">
+			<h2 className="text-center text-xl font-semibold text-gray-200">
 				¡Visita nuestro Instagram!
 			</h2>
+			<p className="text-center text-destacable mb-4"><Link href="https://instagram.com/elgranchopp">@elgranchopp</Link></p>
+
 			<div className="flex flex-wrap justify-center gap-6 px-4 md:px-10">
 				{posts.map((post) => (
 					<Link href={post.permalink} key={post.id} target="_blank" className="transition duration-1 hover:scale-105">
 						<div className="bg-[#202124] rounded-lg shadow-md overflow-hidden max-w-52 lg:max-w-60 mx-auto lg:mx-4">
 							{/* Contenedor cuadrado */}
 
-							<div className="relative w-full pb-[100%]">
+							<div className="relative w-full pb-[120%]">
 								{post.media_type === "IMAGE" ||
 								post.media_type === "CAROUSEL_ALBUM" ? (
 									<img

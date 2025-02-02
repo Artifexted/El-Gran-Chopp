@@ -5,10 +5,12 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<>
-			<h1 className="text-center font-black text-destacable mb-4 text-2xl">El Gran Chopp</h1>
+			<h1 className="text-center font-black text-destacable mb-2 lg:mb-6 text-2xl">
+				El Gran Chopp
+			</h1>
 
 			<div className="lg:flex lg:justify-evenly lg:flex-wrap">
-				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
+				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
 					<div className="relative">
 						<img
 							src="./friends-drinking-min.jpg"
@@ -30,28 +32,32 @@ export default function Home() {
 					</p>
 				</section>
 
-				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
-					<div className="relative">
-						<img
-							src="./concert.png"
-							alt="Clientes disfrutando un show en Pellegrini Concert"
-							className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
-						/>
+				<Link href="https://instagram.com/pellegriniconcert" target="_blank">
+					<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
+						<div className="relative">
+							<img
+								src="./concert.png"
+								alt="Clientes disfrutando un show en Pellegrini Concert"
+								className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
+							/>
 
-						<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 p-2 bg-destacable/70 rounded-lg">
-							<h2 className="text-black font-black">Pellegrini Concert</h2>
+							<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 p-2 bg-destacable/70 rounded-lg">
+								<h2 className="text-black font-black">Pellegrini Concert</h2>
+							</div>
 						</div>
-					</div>
 
-					<p className="mx-4 mt-2 lg:text-center">
-						Viví la magia de los shows en vivo en nuestro primer piso, un lugar
-						pensado para hacer de cada evento una experiencia única. Música en
-						vivo, luces espectaculares y un ambiente inigualable que te hará
-						sentir parte de la energía del momento. ¡No te lo podés perder!
-					</p>
-				</section>
+						<div className="text-center my-4">Instagram: <span className="text-destacable">@pellegriniconcert</span></div>
+						<p className="mx-4 lg:text-center">
+							Viví la magia de los shows en vivo en nuestro primer piso, un
+							lugar pensado para hacer de cada evento una experiencia única.
+							Música en vivo, luces espectaculares y un ambiente inigualable que
+							te hará sentir parte de la energía del momento. ¡No te lo podés
+							perder!
+						</p>
+					</section>
+				</Link>
 
-				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
+				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
 					<div className="relative">
 						<img
 							src="./cine-kinder-min.png"
@@ -73,7 +79,7 @@ export default function Home() {
 				</section>
 
 				<Link href="https://receptivoselgranchopp.com.ar" target="_blank">
-					<section className="mb-8 transition duration-200 lg:w-96 lg:mx-8 lg:hover:scale-110 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
+					<section className="mb-8 transition duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
 						<div className="relative">
 							<img
 								src="./turism-min.jpg"

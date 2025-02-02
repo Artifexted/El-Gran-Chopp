@@ -41,8 +41,8 @@ export default function Header() {
 	// };
 
 	return (
-		<header className="pt-4 flex flex-col items-center lg:mb-4">
-			<img src="/new/logo.png" alt="Logo Chopp" width={116} height={116} />
+		<header className="pt-4 flex flex-col items-center">
+			<img src="/new/logo.png" alt="Logo Chopp" width={116} height={116} className="animate-wiggle" />
 
 			<nav className="flex space-x-2 sm:space-x-6 py-4 font-bold mx-2">
 				<Link
