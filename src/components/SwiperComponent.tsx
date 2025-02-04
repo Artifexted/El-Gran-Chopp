@@ -56,7 +56,7 @@ const SwiperComponent = () => {
 		const swiper = new Swiper(".swiper-container", {
 			loop: true,
 			autoplay: {
-				delay: 50000,
+				delay: 5000,
 				disableOnInteraction: false,
 			},
 			slidesPerView: 1,
