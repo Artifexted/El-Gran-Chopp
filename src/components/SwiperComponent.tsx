@@ -14,7 +14,7 @@ export const SwiperCard = ({ image }: { image: IImage }) => {
 			<div className="overlay"></div>
 			<div className="h-full">
 				<img
-					className="object-cover object-center h-36 lg:h-full w-full max-w-none"
+					className="object-cover object-center h-44 lg:h-full w-full max-w-none"
 					src={image.name}
 					alt="imagen"
 				/>
@@ -28,27 +28,12 @@ interface IImage {
 }
 
 export const images: IImage[] = [
-	{
-		name: "https://http2.mlstatic.com/D_NQ_998128-MLA81581052107_122024-OO.webp",
-	},
-	{
-		name: "https://http2.mlstatic.com/D_NQ_654677-MLA81581630859_122024-OO.webp",
-	},
-	{
-		name: "https://http2.mlstatic.com/D_NQ_641725-MLA81582377215_122024-OO.webp",
-	},
-	{
-		name: "https://http2.mlstatic.com/D_NQ_654436-MLA81362111193_122024-OO.webp",
-	},
-	{
-		name: "https://http2.mlstatic.com/D_NQ_747324-MLA81312030704_122024-OO.webp",
-	},
-	{
-		name: "https://http2.mlstatic.com/D_NQ_698717-MLA81312613804_122024-OO.webp",
-	},
-	{
-		name: "https://http2.mlstatic.com/D_NQ_682023-MLA81581631861_122024-OO.webp",
-	},
+	{ name: "/new/destacado/promo1-min.jpg" },
+	{ name: "/new/destacado/promo2-min.jpg" },
+	{ name: "/new/destacado/promo3-min.jpg" },
+	{ name: "/new/destacado/promo4-min.jpg" },
+	{ name: "/new/destacado/promo5-min.jpg" },
+	{ name: "/new/destacado/promo6-min.jpg" },
 ];
 
 const SwiperComponent = () => {
@@ -74,7 +59,7 @@ const SwiperComponent = () => {
 	}, []);
 
 	return (
-		<div className="swiper-container overflow-hidden relative h-full lg:w-[70%] mx-auto mb-4 lg:mb-8">
+		<div className="swiper-container overflow-hidden relative h-full mx-auto mb-4 lg:mb-8">
 			<div className="swiper-wrapper h-full">
 				{images.map((imagen, id) => (
 					<SwiperCard key={id} image={imagen} />
