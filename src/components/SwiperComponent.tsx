@@ -59,18 +59,24 @@ const SwiperComponent = () => {
 	}, []);
 
 	return (
-		<div className="swiper-container overflow-hidden relative h-full mx-auto mb-4 lg:mb-8">
-			<div className="swiper-wrapper h-full">
-				{images.map((imagen, id) => (
-					<SwiperCard key={id} image={imagen} />
-				))}
+		<>
+			<h2 className="text-center font-black text-destacable mb-2 lg:mb-4 text-2xl">
+				Promociones Destacadas
+			</h2>
+			
+			<div className="swiper-container overflow-hidden relative h-full mx-auto mb-4 lg:mb-8">
+				<div className="swiper-wrapper h-full">
+					{images.map((imagen, id) => (
+						<SwiperCard key={id} image={imagen} />
+					))}
+				</div>
+
+				<div className="swiper-button-next"></div>
+				<div className="swiper-button-prev"></div>
+
+				<div className="swiper-pagination"></div>
 			</div>
-
-			<div className="swiper-button-next"></div>
-			<div className="swiper-button-prev"></div>
-
-			<div className="swiper-pagination"></div>
-		</div>
+		</>
 	);
 };
 

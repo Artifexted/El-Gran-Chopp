@@ -4,6 +4,10 @@ import Link from "next/link";
 const About = () => {
 	return (
 		<div className="lg:flex lg:justify-evenly lg:flex-wrap">
+			<h2 className="text-center font-black text-destacable mb-2 lg:mb-4 text-2xl">
+				Lo que ofrecemos...
+			</h2>
+
 			<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
 				<div className="relative">
 					<img
