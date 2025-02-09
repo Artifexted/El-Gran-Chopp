@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Poppins } from 'next/font/google';
+import Contact from "@/components/Form";
 
 const poppins = Poppins({ weight: '400' , subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 				<main className="flex-grow">
 					{children}
 				</main>
+				<Contact />
 				<Footer />
 			</body>
 		</html>
