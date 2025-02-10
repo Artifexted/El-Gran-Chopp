@@ -9,33 +9,35 @@ const About = () => {
 			</h2>
 
 			<div className="lg:flex lg:justify-evenly lg:flex-wrap">
-				<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group *:cursor-default rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
-					<div className="relative">
-						<img
-							src="./friends-drinking-min.jpg"
-							alt="Clientes disfrutando sus cervezas en El Gran Chopp"
-							className="w-full h-40 object-cover brightness-[.65] saturate-[1.35] lg:rounded-md group-hover:brightness-[.8]"
-						/>
+				<Link href="/fotos">
+					<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
+						<div className="relative">
+							<img
+								src="./friends-drinking-min.jpg"
+								alt="Clientes disfrutando sus cervezas en El Gran Chopp"
+								className="w-full h-40 object-cover brightness-[.65] saturate-[1.35] lg:rounded-md group-hover:brightness-[.8]"
+							/>
 
-						<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 p-2 bg-destacable/70 rounded-lg">
-							<h2 className="text-black font-black">El Gran Chopp</h2>
+							<div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 p-2 bg-destacable/70 rounded-lg">
+								<h2 className="text-black font-black">El Gran Chopp</h2>
+							</div>
 						</div>
-					</div>
 
-					<p className="mx-4 mt-2 lg:text-center">
-						El Gran Chopp es una experiencia única que combina buen sabor, buen
-						ambiente y diversión para todos. Desde su variada oferta
-						gastronómica hasta un espacio pensado para los más pequeños, con un
-						kinder, cine y áreas de juegos, El Gran Chopp se convierte en un
-						destino ideal para familias.
-					</p>
-				</section>
+						<p className="mx-4 mt-2 lg:text-center">
+							El Gran Chopp es una experiencia única que combina buen sabor,
+							buen ambiente y diversión para todos. Desde su variada oferta
+							gastronómica hasta un espacio pensado para los más pequeños, con
+							un kinder, cine y áreas de juegos, El Gran Chopp se convierte en
+							un destino ideal para familias.
+						</p>
+					</section>
+				</Link>
 
 				<Link href="https://instagram.com/pellegriniconcert" target="_blank">
 					<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
 						<div className="relative">
 							<img
-								src="./concert.png"
+								src="./concert.jpeg"
 								alt="Clientes disfrutando un show en Pellegrini Concert"
 								className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
 							/>

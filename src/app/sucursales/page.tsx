@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
-/* eslint-disable @next/next/no-img-element */
 export default function Sucursales() {
 	return (
 		<>
