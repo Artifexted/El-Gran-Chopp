@@ -13,7 +13,7 @@ const About = () => {
 					<section className="mb-8 transition-width duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
 						<div className="relative">
 							<img
-								src="./friends-drinking-min.jpg"
+								src="./elgranchopp.jpg"
 								alt="Clientes disfrutando sus cervezas en El Gran Chopp"
 								className="w-full h-40 object-cover brightness-[.65] saturate-[1.35] lg:rounded-md group-hover:brightness-[.8]"
 							/>
@@ -86,7 +86,7 @@ const About = () => {
 					<section className="mb-8 transition duration-200 lg:w-96 lg:mx-8 lg:hover:scale-105 group rounded-md lg:hover:bg-[#1c1c1c] lg:hover:shadow-lg lg:hover:shadow-black/35 pb-6">
 						<div className="relative">
 							<img
-								src="./turism-min.jpg"
+								src="./receptivos.jpg"
 								alt="Sector kinder para los niños que asistan a El Gran Chopp"
 								className="w-full h-40 object-cover brightness-[.65] saturate-[1.15] lg:rounded-md group-hover:brightness-[.8]"
 							/>
