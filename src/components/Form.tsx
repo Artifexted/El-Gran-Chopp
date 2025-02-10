@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
 	return (
 		<div className="text-center">
 			<h2 id="formulario" className="text-2xl font-bold text-destacable">
-				Denuncias & Quejas
+				Contacto
 			</h2>
 
 			{enviado && (
