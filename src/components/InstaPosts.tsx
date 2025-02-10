@@ -3,11 +3,11 @@ import { InstaPost } from "@/interfaces/InstagramPosts";
 import Link from "next/link";
 
 async function fetchInstagramPosts(): Promise<InstaPost[]> {
-	const { NEXT_PUBLIC_INSTA_USER_ID, NEXT_PUBLIC_INSTA_API_TOKEN } = process.env;
+	//const { NEXT_PUBLIC_INSTA_USER_ID, NEXT_PUBLIC_INSTA_API_TOKEN } = process.env;
 
 	try {
 		const res = await fetch(
-			`https://graph.instagram.com/${NEXT_PUBLIC_INSTA_USER_ID}/media?fields=id,caption,media_type,media_url,permalink,timestamp&access_token=${NEXT_PUBLIC_INSTA_API_TOKEN}&limit=3`
+			`https://graph.instagram.com/9027014267379166/media?fields=id,caption,media_type,media_url,permalink&access_token=IGAAIPzrNulxxBZAE9tWVFoa21ObzlYekFFR2NjNWtiVUw5bkJocWJzd3dvNEdwMkdQaDAtT3dDRmMtYUxOV1hWMmRDUUo5RW54NG16Q3RDSEEwYjhRT0FzYTVuTVBqLUlxQlFncy1oVUFuOUtpcENaU3RSa2tlR2hMcnItY3lqNAZDZD&limit=3`
 		);
 
 		if (!res.ok) {
