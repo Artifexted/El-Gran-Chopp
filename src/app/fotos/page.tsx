@@ -4,7 +4,9 @@ import Wrapper from "./Wrapper";
 const Gallery = () => {
 	return (
 		<>
-			<h2 className="text-center text-destacable">Fotos</h2>
+			<h1 className="text-center font-black text-destacable mb-4 text-2xl">
+				Fotos
+			</h1>
 
 			<Wrapper>
 				<PhotoList />

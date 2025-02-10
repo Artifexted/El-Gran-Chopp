@@ -94,13 +94,13 @@ const Contact: React.FC = () => {
 
 				<div className="w-3/4 mx-auto lg:w-1/2 flex flex-col">
 					<label className="lg:text-left" htmlFor="contacto">
-						Contacto <span className="text-red-500">*</span>
+						Numero de celular <span className="text-red-500">*</span>
 					</label>
 					<input
 						id="contacto"
 						name="contacto"
 						type="text"
-						placeholder="Numero de telefono o email..."
+						placeholder="Numero de celular..."
 						className="rounded-md text-black p-1"
 						value={contacto}
 						onChange={(e) => setContacto(e.target.value)}
