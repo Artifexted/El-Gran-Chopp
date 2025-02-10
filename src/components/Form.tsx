@@ -2,8 +2,6 @@
 import { Errores } from "@/interfaces/Errores";
 import { FormEvent, useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Contact: React.FC = () => {
 	const [nombre, setNombre] = useState<string>("");
@@ -58,13 +56,6 @@ const Contact: React.FC = () => {
 			<h2 id="formulario" className="text-2xl font-bold text-destacable">
 				Denuncias & Quejas
 			</h2>
-
-			<div className="text-white p-2 rounded-lg w-fit flex hover:scale-105 transition duration-200 mx-auto">
-				<a href="https://wa.me/5493416880560" target="_blank">
-					<FontAwesomeIcon icon={faWhatsapp} className="mr-1 w-4" />
-					3416880560
-				</a>
-			</div>
 
 			{enviado && (
 				<div className="mt-4 text-destacable">
